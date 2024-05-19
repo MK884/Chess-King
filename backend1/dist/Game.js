@@ -31,10 +31,8 @@ class Game {
         if (this.moveCount % 2 === 1 && socket !== this.player2) {
             return;
         }
-        console.log("Moking move");
         try {
             this.board.move(move);
-            console.log("inside move");
         }
         catch (error) {
             console.log(error);
