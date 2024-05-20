@@ -24,11 +24,10 @@ export const GamePage = () => {
 
       switch (message.type) {
         case INIT_GAME:
-          setStared(true);
           // setChess(new Chess());
           setBoard(chess.board());
+          setStared(true);
           // console.log("game init");
-
           break;
 
         case MOVE:
@@ -50,8 +49,8 @@ export const GamePage = () => {
 
   return (
     <>
-      <div className="h-screen flex justify-around items-center ">
-        <div>
+      <div className="h-screen flex justify-around items-center lg:flex-row flex-col">
+        <div className=" bg-white/5 rounded-3xl backdrop-blur-sm pt-10 pr-10 pb-10 pl-4">
           <ChessBoard
             chess={chess}
             setBoard={setBoard}

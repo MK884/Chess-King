@@ -22,7 +22,7 @@ export class GameManager {
 
     removeUser(socket:WebSocket){
         this.users = this.users.filter(user => user != socket);
-
+        
     }
 
     private addHandler(socket:WebSocket){

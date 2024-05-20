@@ -11,7 +11,6 @@ export const useSocket = () =>{
 
         ws.onopen = () =>{
             console.log("connected");
-            
             setSocket(ws);
         }
 
